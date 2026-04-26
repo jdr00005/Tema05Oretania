@@ -23,6 +23,12 @@ public class Main {
         System.out.println(vector[0]);
         System.out.println(lista.get(0));
 
+        Estudiante e1 = new Estudiante();
+        e1.nombre = "Chuck";
+        e1.grupo = "1º de DAM";
+
+        e1.entrar();
+        e1.estudiar();
 
 
     }

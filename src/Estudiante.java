@@ -1,29 +1,13 @@
 import java.util.List;
 
-public class Estudiante {
+class Estudiante extends Persona {
 
-    private String nombre;
-    private List<ModuloProfesional> modulos;
+    int nie;
+    String grupo;
 
-    public Estudiante(String nombre) {
-        this.nombre = nombre;
-        this.modulos = modulos;
-    }
+    public void estudiar() {
 
-    public void agregarModulo(ModuloProfesional modulo) {
-
-        modulos.add(modulo);
+        System.out.println(nombre + " estudia en " + grupo);
 
     }
-
-    public List<ModuloProfesional> getModulos() {
-
-        return List.copyOf(modulos);
-
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
 }
