@@ -23,12 +23,26 @@ public class Main {
         System.out.println(vector[0]);
         System.out.println(lista.get(0));
 
-        Estudiante e1 = new Estudiante();
-        e1.nombre = "Chuck";
-        e1.grupo = "1º de DAM";
+        Estudiante e1 = new Estudiante("Chuck", "Norris", 123456, "1º de DAM");
+
 
         e1.entrar();
         e1.estudiar();
+
+
+        Animal a = new Animal("Turrón");
+        Gato g = new Gato("Guantes", "Siameso");
+        Perro p = new Perro("Thor", "Bretón");
+
+
+        a.emitirSonido();
+        p.emitirSonido();
+        g.emitirSonido();
+
+
+        Portatil porta = new Portatil("Xiaomi", "Notebook Air 13.13");
+        porta.numeroSerie = 20;
+        porta.imprimir();
 
 
     }

@@ -2,12 +2,18 @@ import java.util.List;
 
 class Estudiante extends Persona {
 
-    int nie;
-    String grupo;
+    private int nie;
+    private String grupo;
+
+    public Estudiante(String nombre, String apellidos, int nie, String grupo) {
+        super(nombre, apellidos);
+        this.nie = nie;
+        this.grupo = grupo;
+    }
 
     public void estudiar() {
 
-        System.out.println(nombre + " estudia en " + grupo);
+        System.out.println(getNombre() + " estudia en " + grupo);
 
     }
 }
