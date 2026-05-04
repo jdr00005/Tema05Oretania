@@ -10,7 +10,14 @@ public class Animal {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
+    public void setNombre(String nombre) throws IllegalArgumentException{
+        if (nombre.isBlank()){
+
+            throw new IllegalArgumentException("El nombre no puede quedar en blanco");
+
+        }
+
+
         this.nombre = nombre;
     }
 
