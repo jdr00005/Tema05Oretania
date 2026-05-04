@@ -14,7 +14,7 @@ public class Cuadrado {
 
         if (lado < 0) {
 
-            throw new IllegalArgumentException("Lado no válido");
+            throw new LadoNoValidoException();
 
         }
 
