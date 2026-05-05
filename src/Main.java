@@ -34,14 +34,14 @@ public class Main {
         e1.estudiar();
 
 
-        Animal a = new Animal("Turrón");
+        //Animal a = new Animal("Turrón");
         Gato g = new Gato("Guantes", "Siameso");
         Perro p = new Perro("Thor", "Bretón");
 
 
-        a.emitirSonido();
+        /*a.emitirSonido();
         p.emitirSonido();
-        g.emitirSonido();
+        g.emitirSonido();*/
 
 
         Portatil porta = new Portatil("Xiaomi", "Notebook Air 13.13");
@@ -75,6 +75,14 @@ public class Main {
 
         }
 
+        Imagen i = new Imagen(640,480);
+        Almacenable a1 = i;
+        Rotable r1 = i;
+
+        i.recuperar("imagen.jpg");
+        i.rotarSentidoContrarioAgujas();
+        a1.guardar("salida.jpg");
+        r1.rotarSentidoAgujas();
 
     }
 

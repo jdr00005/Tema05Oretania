@@ -1,4 +1,4 @@
-public class Animal {
+abstract class Animal {
 
     private String nombre;
 
@@ -21,10 +21,6 @@ public class Animal {
         this.nombre = nombre;
     }
 
-    public void emitirSonido() {
-
-        System.out.println(nombre + " hace algún sonido");
-
-    }
+    public abstract void emitirSonido();
 
 }
