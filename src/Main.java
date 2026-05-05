@@ -1,3 +1,7 @@
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -43,6 +47,33 @@ public class Main {
         Portatil porta = new Portatil("Xiaomi", "Notebook Air 13.13");
         porta.numeroSerie = 20;
         porta.imprimir();
+
+
+        try {
+
+            FileReader fr = new FileReader("no_existe.txt");
+            FileWriter fw = new FileWriter("copia.txt");
+            fr.transferTo(fw);
+            fw.close();
+            fr.close();
+
+        } catch (FileNotFoundException e) {
+
+            System.err.println("No encontrado");
+
+        } catch (IOException e) {
+
+            System.err.println("Error de E/S");
+
+        } catch (Exception e) {
+
+            System.err.println("Ha sido otro error");
+
+        } finally {
+
+            System.err.println("Siempre se ejecuta");
+
+        }
 
 
     }
