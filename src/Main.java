@@ -51,7 +51,7 @@ public class Main {
 
         try {
 
-            FileReader fr = new FileReader("no_existe.txt");
+            FileReader fr = new FileReader("no_existe.txt.");
             FileWriter fw = new FileWriter("copia.txt");
             fr.transferTo(fw);
             fw.close();
